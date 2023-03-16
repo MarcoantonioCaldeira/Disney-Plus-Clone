@@ -1,16 +1,16 @@
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Login from "./components/Login";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route crash path="/">
-
-          <Login />
-        </Route>
-      </Switch>
+      <Route>
+        <Login />
+      </Route>
     </div>
   );
 }
