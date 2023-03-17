@@ -4,7 +4,9 @@ const Login = (props) => {
     return (
         <Container>
             <Content>
-
+                <CTA>
+                </CTA>
+                <BgImage />
             </Content>
         </Container>
     );
@@ -61,6 +63,8 @@ const CTA = styled.div`
     text-align: center
     margin-right: auto;   
 `;
+
+
 const CTALogoOne = styled.img`
   margin-bottom: 12px;
   max-width: 600px;
