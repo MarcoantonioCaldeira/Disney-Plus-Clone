@@ -11,7 +11,9 @@ const Header = (props) => {
             <NavMenu>
                 <a href="/home">
                     <img src="/images/home-icon.svg" alt="HOME" />
+                    <span>HOME</span>
                 </a>
+                
             </NavMenu>
         </Nav>
     );
@@ -60,9 +62,46 @@ const NavMenu = styled.div`
     margin-rigth: auto;
     margin-left: 25px;
 
-    @media (max-width: 768px){
-        display: none;
+
+    a {
+        display: flex;
+        aling-itens: center;
+        padding: 0 12px;
+
+
+        img{
+            heigth: 20px;
+            min-width: 20px;
+            width: 20px;
+            z-index: auto;
+        }
+
+        span{
+            color: rgb(249, 249, 249);
+            font-size: 13px;
+            letter-spacing: 1.42px;
+            line-heigth: 2px 0px;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        &:before{
+            background-color: rgb(249, 249, 249);
+            border-radius: 0px 0px 4px 4px;
+            bottom: -6px;
+            content: "";
+            heigth: 2px;
+            opacity: 0;
+            position: absolute;
+            rigth: 0px;
+            transform-origin: left center;
+        }
+
     }
+
+    // @media (max-width: 768px){
+    //     display: none;
+    // }
 `;
 
 
