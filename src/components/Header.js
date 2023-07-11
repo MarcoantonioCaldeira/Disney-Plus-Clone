@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import styled from "styled-components";
-import { auth, provider } from "../firebase";
+import { auth, provider } from "../features/firebase";
 
 
 const Header = (props) => {
 
     const handleAuth = () => {
         auth
-            .signInWithPopup(provider)
+           .signInWithPopup(provider)
             .then((result) => {
                 console.log(result);
             })
