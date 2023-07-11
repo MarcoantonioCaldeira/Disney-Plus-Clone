@@ -6,8 +6,10 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={sotore}>
+      <App />
+    </Provider>
   </React.StrictMode>,
-    document.getElementById("root")
+  document.getElementById("root")
 );
 
